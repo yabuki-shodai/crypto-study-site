@@ -1,5 +1,6 @@
 "use client";
 
+import { HomeLink } from "@/components/commons/headers/home-link";
 import { useState } from "react";
 import Link from "next/link";
 import { AddressResult } from "@/components/elements/wallet/address-result";
@@ -73,9 +74,12 @@ export function WalletAddressGeneratorView() {
     <div className="mx-auto flex min-h-screen w-full max-w-6xl flex-col px-5 py-6 sm:px-8 lg:px-10">
       <header className="flex flex-col gap-4 border-b border-zinc-300 pb-5 sm:flex-row sm:items-end sm:justify-between">
         <div>
-          <h1 className="mt-2 text-3xl font-semibold tracking-normal text-zinc-950 sm:text-4xl">
-            ビットコインアドレス生成サイト
-          </h1>
+          <div className="mt-2 flex items-center gap-3">
+            <HomeLink />
+            <h1 className="text-3xl font-semibold tracking-normal text-zinc-950 sm:text-4xl">
+              ビットコインアドレス生成サイト
+            </h1>
+          </div>
           <p className="mt-2 text-sm text-zinc-600">
             Bitcoin メインネット の BIP84 アドレスを作成します
           </p>

@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Home() {
   const notes = [
     {
-      href: "/bitcoin-address-generate/about",
+      href: "/bitcoin-address-generate",
       number: "01",
       title: "TypeScriptでビットコインのウォレットの作ってみた。",
     },
@@ -35,7 +35,6 @@ export default function Home() {
 
       <section className="mt-6">
         <h2 className="text-base font-semibold text-zinc-950">[ 目次 ]</h2>
-        <p className="mt-1 text-xs text-zinc-500">気になったところから読む用。</p>
 
         <div className="mt-4 border-y border-dotted border-zinc-400">
           {notes.map((note) => (
